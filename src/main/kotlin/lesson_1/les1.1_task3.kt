@@ -16,5 +16,4 @@ fun main() {
     val announcement = ("$hour:$minutes - vremya posadki")
 
     println(announcement)
-
 }
