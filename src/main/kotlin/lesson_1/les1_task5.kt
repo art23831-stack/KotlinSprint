@@ -1,18 +1,15 @@
 package lesson_1
 
+import javax.swing.JFormattedTextField
+
 fun main() {
 
-    val second = 6480
-    val minutes = second / 60
-    val hours = minutes / 60
+    val totalSeconds = 6480
+    val hours = totalSeconds / 3600
+    val remainingSecondsAfterHours = totalSeconds % 3600
+    val minutes = remainingSecondsAfterHours / 60
+    val seconds = remainingSecondsAfterHours % 60
 
-//    println(minutes)
-//    println(hours)
-
-    val remainderSecond = 0
-    val remainderMinutes = 108 - 60
-
-//    println(remainderMinutes)
-    println("0$hours:$remainderMinutes:0$remainderSecond - vremya, provedennoe v kosmose")
-
+    val formatedTimeInSpace = "%02d:%02d:%02d".format(hours, minutes, seconds)
+    println(formatedTimeInSpace)
 }
