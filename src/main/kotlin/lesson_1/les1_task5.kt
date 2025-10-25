@@ -12,4 +12,5 @@ fun main() {
 
     val formatedTimeInSpace = "%02d:%02d:%02d".format(hours, minutes, seconds)
     println(formatedTimeInSpace)
+
 }
