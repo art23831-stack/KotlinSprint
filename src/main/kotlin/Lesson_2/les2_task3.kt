@@ -1,15 +1,17 @@
-package Lesson_2
+package org.example.Lesson_2
 
 fun main() {
 
     val departureHour = 9
     val departureMin = 39
     val minutesOnTheWay = 457
+    val minutesInHours = 60
+    val hoursInDay = 24
 
-    val departureTimeInMinutes = 9 * 60 + 39
-    val arrivalTimeInMinutes = departureTimeInMinutes + 457
-    val arrivalHour = (arrivalTimeInMinutes / 60) % 24
-    val arrivalMinutes = arrivalTimeInMinutes % 60
+    val departureTimeInMinutes = departureHour * minutesInHours + departureMin
+    val arrivalTimeInMinutes = departureTimeInMinutes + minutesOnTheWay
+    val arrivalHour = (arrivalTimeInMinutes / minutesInHours) % hoursInDay
+    val arrivalMinutes = arrivalTimeInMinutes % minutesInHours
 
     println("$arrivalHour:$arrivalMinutes")
 
