@@ -9,5 +9,4 @@ fun main() {
 
     val averageRating = (people1 + people2 + people3 + people4) / 4
     println(averageRating)
-
 }
