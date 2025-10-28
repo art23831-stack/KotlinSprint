@@ -4,10 +4,11 @@ fun main() {
 
     val krystalOreWithoutBuff = 7
     val ironOreWithoutBuff = 11
-    val buff = 1.2
+    val percentBuff = 20
+    val buff: Float = percentBuff / 100f
 
-    val bonusCrystalOre = krystalOreWithoutBuff * buff - krystalOreWithoutBuff
-    val bonusIronOre = ironOreWithoutBuff * buff - ironOreWithoutBuff
+    val bonusCrystalOre =krystalOreWithoutBuff + krystalOreWithoutBuff * buff
+    val bonusIronOre = ironOreWithoutBuff + ironOreWithoutBuff * buff
 
     println(bonusCrystalOre.toInt())
     println(bonusIronOre.toInt())
