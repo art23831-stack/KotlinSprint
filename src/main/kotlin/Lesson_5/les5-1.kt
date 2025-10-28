@@ -2,8 +2,10 @@ package org.example.Lesson_5
 
 fun main() {
 
-    val sum = 17
-    println("Need verification: How much 9 + 8?")
+    val number1 = 9
+    val number2 = 8
+    val sum = number1 + number2
+    println("Need verification: How much $number1 + $number2?")
 
     val answer = readln().toInt()
     if (answer == sum) {
