@@ -6,11 +6,11 @@ fun main() {
     var to = "E4"
     var numberMove = 1
 
-    println( "$from-$to;$numberMove")
+    println("$from-$to;$numberMove")
 
     from = "D2"
     to = "D3"
-    numberMove += 1
+    numberMove ++
 
     println("$from-$to;$numberMove")
 
