@@ -13,7 +13,7 @@ fun main() {
 
     hour = 10
     minutes = 55
+    val announcement = ("$hour:$minutes - vremya posadki")
 
-    println("$hour:$minutes - vremya posadki")
-
+    println(announcement)
 }
